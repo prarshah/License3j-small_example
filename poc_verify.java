@@ -15,7 +15,7 @@ public class poc_verify {
   public static void main(String[] args) {
     License license = new License();
 try {
-     license= new LicenseReader("/Users/tkmaipe/projects/lightGBMpoc/src/main/scala/poc_lisence3j/license.base64")
+     license= new LicenseReader("license.base64")
          .read(IOFormat.BASE64);
   } catch (IOException e) {
     error("Error reading license file " + e);
